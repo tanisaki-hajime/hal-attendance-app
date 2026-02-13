@@ -1,0 +1,341 @@
+/* ========================================
+   会員管理システム統一スタイルシート
+   ======================================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f5f5f5;
+    color: #333;
+    line-height: 1.6;
+    padding: 20px;
+}
+
+/* ========================================
+   基本タグスタイル
+   ======================================== */
+
+h1 {
+    font-size: 28px;
+    color: #2c3e50;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    border-bottom: 3px solid #3498db;
+}
+
+h2 {
+    font-size: 22px;
+    color: #34495e;
+    margin-top: 20px;
+    margin-bottom: 15px;
+}
+
+p {
+    margin-bottom: 15px;
+}
+
+a {
+    color: #3498db;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #2980b9;
+    text-decoration: underline;
+}
+
+/* ========================================
+   フォームスタイル
+   ======================================== */
+
+form {
+    background: white;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 15px;
+    font-weight: 500;
+    color: #2c3e50;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="email"],
+input[type="file"] {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #bdc3c7;
+    border-radius: 4px;
+    font-size: 14px;
+    transition: border-color 0.3s ease;
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus,
+input[type="email"]:focus,
+input[type="file"]:focus {
+    outline: none;
+    border-color: #3498db;
+    box-shadow: 0 0 5px rgba(52, 152, 219, 0.3);
+}
+
+/* ========================================
+   ボタンスタイル
+   ======================================== */
+
+button {
+    padding: 10px 20px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    border: none;
+    border-radius: 4px;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    background-color: #3498db;
+    color: white;
+}
+
+button:hover {
+    background-color: #2980b9;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+button:active {
+    transform: translateY(0);
+}
+
+button[type="button"] {
+    background-color: #95a5a6;
+}
+
+button[type="button"]:hover {
+    background-color: #7f8c8d;
+}
+
+button[name="update"],
+button[name="done"] {
+    background-color: #27ae60;
+}
+
+button[name="update"]:hover,
+button[name="done"]:hover {
+    background-color: #229954;
+}
+
+button[name="back"] {
+    background-color: #95a5a6;
+}
+
+button[name="back"]:hover {
+    background-color: #7f8c8d;
+}
+
+/* ========================================
+   テーブルスタイル
+   ======================================== */
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background: white;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+th {
+    background-color: #34495e;
+    color: white;
+    padding: 15px;
+    text-align: left;
+    font-weight: 600;
+}
+
+td {
+    padding: 12px 15px;
+    border-bottom: 1px solid #ecf0f1;
+}
+
+tr:last-child td {
+    border-bottom: none;
+}
+
+tr:hover {
+    background-color: #f8f9fa;
+}
+
+/* ========================================
+   メッセージ・アラートスタイル
+   ======================================== */
+
+.error {
+    color: #e74c3c;
+    background-color: #fadbd8;
+    padding: 10px 15px;
+    border-left: 4px solid #e74c3c;
+    border-radius: 4px;
+    margin-bottom: 15px;
+    display: block;
+    font-weight: 500;
+}
+
+span.error {
+    display: block;
+    color: #e74c3c;
+    font-size: 12px;
+    margin-top: 5px;
+}
+
+/* ========================================
+   画像スタイル
+   ======================================== */
+
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 4px;
+}
+
+/* ========================================
+   コンテナ・ボックススタイル
+   ======================================== */
+
+div[style*="background:#fff"] {
+    background-color: white !important;
+    padding: 20px !important;
+    border: 1px solid #bdc3c7 !important;
+    border-radius: 8px !important;
+    margin-bottom: 20px;
+}
+
+div[style*="text-align: right"] {
+    text-align: right;
+    margin-bottom: 20px;
+    padding: 15px;
+    background-color: white;
+    border-radius: 4px;
+    border-bottom: 1px solid #ecf0f1;
+}
+
+/* ========================================
+   ページャー（ページネーション）スタイル
+   ======================================== */
+
+.pager {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-top: 30px;
+    padding: 20px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.pager a {
+    padding: 8px 12px;
+    border: 1px solid #3498db;
+    border-radius: 4px;
+    background-color: #ecf0f1;
+    color: #3498db;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.pager a:hover {
+    background-color: #3498db;
+    color: white;
+    text-decoration: none;
+}
+
+.pager span {
+    padding: 8px 12px;
+    background-color: #3498db;
+    color: white;
+    border-radius: 4px;
+    font-weight: 600;
+}
+
+/* ========================================
+   レスポンシブデザイン
+   ======================================== */
+
+@media (max-width: 768px) {
+    body {
+        padding: 10px;
+    }
+
+    h1 {
+        font-size: 22px;
+    }
+
+    form {
+        padding: 20px;
+    }
+
+    table {
+        font-size: 14px;
+    }
+
+    th,
+    td {
+        padding: 10px;
+    }
+
+    .pager {
+        flex-wrap: wrap;
+    }
+
+    button {
+        padding: 8px 15px;
+        font-size: 12px;
+        margin-bottom: 8px;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 18px;
+    }
+
+    form {
+        padding: 15px;
+    }
+
+    table {
+        font-size: 12px;
+    }
+
+    th,
+    td {
+        padding: 8px;
+    }
+
+    button {
+        padding: 8px 12px;
+        font-size: 12px;
+        margin-right: 5px;
+    }
+
+    div[style*="text-align: right"] {
+        padding: 10px;
+        font-size: 14px;
+    }
+}
